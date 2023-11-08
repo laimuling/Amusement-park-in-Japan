@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*
+ * Page name
+ * Copyright 2020
+ * Author
+ * Licensed
+ */
+
+/* -------------------------- *\
+	Content
+\* -------------------------- */
+/**
+ * Content .............. You are reading it!
+ * Globel .............. Set common styles
+ * Layout .............. Set grid
+ * Components .............. Set components styles
+ */
+ 
+/* -------------------------- *\
+	Globel
+\* -------------------------- */
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-family: '微軟正黑體', arial;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+} 
+
+
+/* -------------------------- *\
+	Layout
+\* -------------------------- */
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+.jambotron{
+	height: 50px;
+}
+
+/* -------------------------- *\
+	Components
+\* -------------------------- */
+
+.navbar{
+	line-height: 100px;
+	border: 1px solid #333;
+	width: 1200px;
+	padding-left: 500px;
+	padding-right: 50px;
+	background-color: rgb(255, 215, 221);
+}
+.navbar .webname{
+	/* border: 1px solid red; */
+	display: inline-block;
+}
+.navbar .list{
+	float: right;
+	border: 1px solid #333;
+	line-height: 30px;
+	transform: translate(0,35px);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: whitesmoke;
+}
+
+.area{
+	/* border: 1px solid #333; */
+	line-height: 70px;
+}
+.btn-main{
+	border: 1px solid #333;
+	padding: 8px 8px;
+	font-size: large;
+	font-weight: 800;
+	margin-left: 30px;
+	margin-right: 20px;
+	border-radius: 7px;
+}
+.btn-2nd{
+	border-bottom: 1px solid #333;
+	padding: 1px 5px;
+	margin: 0 5px;
+}
+.oitaken{
+	border: 1px solid #333;
+	padding: 1px 5px;
+	/* margin: 0 5px; */
+	display: inline-block;
+	line-height: 25px;
+	font-weight: 800;
+	background-color: green;
+	border-radius: 4px;
+}
+.jambotron{
+	background-color: rgb(178, 214, 250);
+	height: 360px;
+}
+.parklist{
+	padding-left: 150px;
+	line-height: 30px;
+	padding-top: 30px;
+	font-size: large;
+}
+.parklist1{
+	display: block;
+	/* border: 1px solid #333; */
+	padding-bottom: 20px;
+}
+.parklist2{
+	display: block;
+	/* border: 1px solid #333; */
+	padding-bottom: 20px;
+}
+.parklist3{
+	display: block;
+	/* border: 1px solid #333; */
+	padding-bottom: 20px;
+}
+
+/* footer */
+.footer .container{
+	height: 100px;
+	padding-top: 20px;
+}
+.btn-send{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 22px;
+	border: 1px solid #333;
+	padding: 8px 10px;
+	font-size: large;
+	font-weight: 800;
+	border-radius: 7px;
+	margin-top: 5px;
+	background-color: rgb(204, 217, 243);
+}
