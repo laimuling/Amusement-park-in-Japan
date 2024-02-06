@@ -54,7 +54,7 @@ a{
 	Components
 \* -------------------------- */
 
-.navbar{
+.header__navbar{
 	line-height: 100px;
 	border: 1px solid #333;
 	width: 1200px;
@@ -62,11 +62,11 @@ a{
 	padding-right: 50px;
 	background-color: rgb(255, 215, 221);
 }
-.navbar .webname{
+.header__navbar .header__webname{
 	/* border: 1px solid red; */
 	display: inline-block;
 }
-.navbar .list{
+.header__navbar .list{
 	float: right;
 	border: 1px solid #333;
 	line-height: 30px;
@@ -76,11 +76,20 @@ a{
 	background-color: whitesmoke;
 }
 
-.area{
-	/* border: 1px solid #333; */
-	line-height: 70px;
+.jambotron{
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-color: rgb(178, 214, 250);
 }
-.btn-main{
+.main__area{
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+}
+.main__button--primary{
 	border: 1px solid #333;
 	padding: 8px 8px;
 	font-size: large;
@@ -88,15 +97,11 @@ a{
 	margin-left: 30px;
 	margin-right: 20px;
 	border-radius: 7px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
-.btn-2nd{
+.main__button--secondary{
 	border-bottom: 1px solid #333;
-	padding: 1px 5px;
-	margin: 0 5px;
-}
-.jambotron{
-	background-color: rgb(178, 214, 250);
-	height: 580px;
+	padding-top: 8px;
 }
 .main-map{
 	width: 800px;
@@ -116,14 +121,14 @@ a{
 	padding-top: 30px;
 	font-size: 28px;
 }
-.email{
+.footer__email{
 	margin: 0 auto;
 	width: 400px;
 	height: 40px;
 	/* border: 1px solid red; */
 	margin-top: 10px;
 }
-.email .text{
+.footer__email .footer__text{
 	/* border: 1px solid #333; */
 	display: inline-block;
 	vertical-align: top;
@@ -131,7 +136,7 @@ a{
 	margin-top: 10px;
 	margin-right: 3px;
 }
-.email .frame{
+.footer__email .footer__frame{
 	border: 1px solid #333;
 	width: 300px;
 	height: 28px;
@@ -139,14 +144,14 @@ a{
 	vertical-align: top;
 	margin-top: 5px;
 }
-.msg{
+.footer__msg{
 	margin: 0 auto;
 	width: 400px;
 	height: 160px;
 	/* border: 1px solid red; */
 	margin-top: 10px;
 }
-.msg .text{
+.footer__msg .footer__text{
 	/* border: 1px solid #333; */
 	display: inline-block;
 	vertical-align: top;
@@ -154,7 +159,7 @@ a{
 	margin-top: 10px;
 	margin-right: 12px;
 }
-.msg .frame{
+.msg .footer__frame{
 	border: 1px solid #333;
 	width: 300px;
 	height: 150px;
@@ -162,7 +167,7 @@ a{
 	vertical-align: top;
 	margin-top: 5px;
 }
-.btn-send{
+.footer__btn-send{
 	display: inline-block;
 	position: absolute;
 	left: 50%;

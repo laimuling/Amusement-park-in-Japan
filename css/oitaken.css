@@ -48,15 +48,12 @@ a{
 	margin: 0 auto;
 	border: 1px solid #ccc;
 }
-.jambotron{
-	height: 50px;
-}
 
 /* -------------------------- *\
 	Components
 \* -------------------------- */
 
-.navbar{
+.header__navbar{
 	line-height: 100px;
 	border: 1px solid #333;
 	width: 1200px;
@@ -64,11 +61,11 @@ a{
 	padding-right: 50px;
 	background-color: rgb(255, 215, 221);
 }
-.navbar .webname{
+.header__navbar .header__webname{
 	/* border: 1px solid red; */
 	display: inline-block;
 }
-.navbar .list{
+.header__navbar .header__list{
 	float: right;
 	border: 1px solid #333;
 	line-height: 30px;
@@ -77,12 +74,20 @@ a{
 	padding-right: 10px;
 	background-color: whitesmoke;
 }
-
-.area{
-	/* border: 1px solid #333; */
-	line-height: 70px;
+.jambotron{
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-color: rgb(178, 214, 250);
 }
-.btn-main{
+.main__area{
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+}
+.main__button--primary{
 	border: 1px solid #333;
 	padding: 8px 8px;
 	font-size: large;
@@ -90,54 +95,36 @@ a{
 	margin-left: 30px;
 	margin-right: 20px;
 	border-radius: 7px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
-.btn-2nd{
+.main__button--secondary{
 	border-bottom: 1px solid #333;
-	padding: 1px 5px;
-	margin: 0 5px;
+	padding-top: 8px;
 }
-.oitaken{
+.main__oitaken{
 	border: 1px solid #333;
 	padding: 1px 5px;
-	/* margin: 0 5px; */
+	padding-top: 8px;
 	display: inline-block;
-	line-height: 25px;
 	font-weight: 800;
 	background-color: green;
 	border-radius: 4px;
 }
-.jambotron{
-	background-color: rgb(178, 214, 250);
-	height: 360px;
-}
-.parklist{
-	padding-left: 150px;
-	line-height: 30px;
-	padding-top: 30px;
+.main__parklist{
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
 	font-size: large;
+	padding-left: 200px;
 }
-.parklist1{
-	display: block;
-	/* border: 1px solid #333; */
-	padding-bottom: 20px;
-}
-.parklist2{
-	display: block;
-	/* border: 1px solid #333; */
-	padding-bottom: 20px;
-}
-.parklist3{
-	display: block;
-	/* border: 1px solid #333; */
-	padding-bottom: 20px;
-}
+
 
 /* footer */
 .footer .container{
 	height: 100px;
 	padding-top: 20px;
 }
-.btn-send{
+.footer__btn-send{
 	display: inline-block;
 	position: absolute;
 	left: 50%;
